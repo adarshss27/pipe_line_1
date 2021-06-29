@@ -8,12 +8,12 @@ pipeline{
         }
         stage('permission'){
             steps{
-                sh 'chmod  -R 777 /var/lib/jenkins/workspace/hello'
+                sh 'chmod  -R 777 /var/lib/jenkins/workspace/test123'
             }
         }
         stage('copy'){
             steps{
-                sh 'rsync -a --exclude=".*" /var/lib/jenkins/workspace/hello/*  adarsh@192.168.235.145:/home/adarsh/new_project'
+                sh 'rsync -a --exclude=".*" /var/lib/jenkins/workspace/test123/*  adarsh@192.168.235.145:/home/adarsh/new_project'
             }
         }
         stage('Task -I'){
