@@ -16,7 +16,7 @@ pipeline{
                 sh 'rsync -a --exclude=".*" /var/lib/jenkins/workspace/hello/*  adarsh@192.168.235.145:/home/adarsh/new_project'
             }
         }
-        stage('deploy-1'){
+        stage('Task -I'){
             steps{
                 script{
                     def device = [
@@ -30,7 +30,7 @@ pipeline{
                 }
             }
         }
-        stage('deploy-2'){
+        stage('TASk - II'){
             steps{
                 script{
                     def device = [
